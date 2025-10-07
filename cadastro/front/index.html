@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Alunos</h1>
+        <form id="alunoForm" class="form-card">
+            <div class="form-group">
+                <label for="aluno">Aluno:</label>
+                <input type="text" placeholder="Insira o nome do aluno" id="aluno" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" placeholder="Insira o CPF" id="cpf" required>
+            </div>
+
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+
+        <hr>
+
+        <div class="lista-section">
+            <h2>Lista de Alunos</h2>
+            <button onclick="buscarAlunos()" class="btn-secondary">Carregar Alunos</button>
+            <ul id="listaAlunos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
